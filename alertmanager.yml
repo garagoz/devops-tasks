@@ -1,0 +1,17 @@
+global:
+
+route:
+
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 10s
+
+  receiver: my-receiver
+
+  routes:
+    - receiver: my-receiver
+
+receivers:
+  - name: 'my-receiver'
+    webhook_configs:
+      - url: 'http://192.168.124.1:9478/alert' # this ip can be any ip

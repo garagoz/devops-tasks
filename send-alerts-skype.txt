@@ -1,0 +1,15 @@
+Task: there are many servers at x company, all servers monitored with prometheus and grafana tools.
+The manager asked me to implement receiving notification via skype if one of the server is down. This is the pretty simple task if research inet enough.
+For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git github project.
+
+1) ssh into prometheus installed server, then install prometheus-alertmanager using apt repository.
+2) mkdir /etc/prometheus/alert-rules
+3) copy rules.yml /etc/prometheus/alert-rules/  # rules.yml file exists this git repo
+4) open /etc/prometheus/prometheus.yml and edit like below
+    rule_files:
+      - "alert-rules/rules.yml"
+
+5) backup default alertmanager.yml file like this alertmanager.yml.bak
+6) edit /etc/prometheus/alertmanager.yml, this file exists this git repo
+7)
+
