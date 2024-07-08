@@ -20,4 +20,5 @@ For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git g
 11) and run this project python3 prometheus-skype-alerts --config=skyp-config.yml
 
 PS: grafana-server, prometheus, prometheus-alertmanager and python app must be running state in order to see results
+you should see like this message "FIRING, Endpoint 192.168.124.11:9100 down, 2024-07-08T15:22:36+00:00" at skype messenger
 
