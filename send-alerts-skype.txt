@@ -11,5 +11,11 @@ For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git g
 
 5) backup default alertmanager.yml file like this alertmanager.yml.bak
 6) edit /etc/prometheus/alertmanager.yml, this file exists this git repo
-7)
+7) git clone https://github.com/yurcn/prometheus-skype-alerts.git
+8) create skype-config.yml file at cloned project root directory
+9) open your browser, login to skype with your credentials, create group chat, name it anything you want
+  write any text to that group, skype opened window, mouse right click, press inspect, and move to network section, there you must
+  find group channel id like this 19:XXXX@thread.skype
+10) open skype-config.yml and complete your credentail details with group channel id (this file also exists this git repo)
+11) and run this project python3 prometheus-skype-alerts --config=skyp-config.yml
 

@@ -1,0 +1,6 @@
+skype_user: '----'
+password: '----'
+to_user: '19:-----@thread.skype' # or LiveID 'live:.cid.cd13cb' or ChatID '19:XXXX@thread.skype'
+listen_address: '0.0.0.0'
+listen_port: 9478
+format: 'short'
