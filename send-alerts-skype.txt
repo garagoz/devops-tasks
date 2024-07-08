@@ -19,3 +19,5 @@ For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git g
 10) open skype-config.yml and complete your credentail details with group channel id (this file also exists this git repo)
 11) and run this project python3 prometheus-skype-alerts --config=skyp-config.yml
 
+PS: grafana-server, prometheus, prometheus-alertmanager and python app must be running state in order to see results
+
