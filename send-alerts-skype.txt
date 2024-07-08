@@ -1,5 +1,5 @@
 Task: there are many servers at x company, all servers monitored with prometheus and grafana tools.
-The manager asked me to implement receiving notification via skype if one of the server is down. This is the pretty simple task if research inet enough.
+The role assigned me to implement receiving notification via skype if one of the server is down. This is the pretty simple task if research inet enough.
 For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git github project.
 
 1) ssh into prometheus installed server, then install prometheus-alertmanager using apt repository.
