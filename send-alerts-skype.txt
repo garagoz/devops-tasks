@@ -1,5 +1,5 @@
 Task: there are many servers at x company, all servers monitored with prometheus and grafana tools.
-The role assigned me to implement receiving notification via skype if one of the server is down. This is the pretty simple task if research inet enough.
+The role assigned to me that implement receiving notification via skype if one of the server is down. This is the pretty simple task by researching internet.
 For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git github project.
 
 1) ssh into prometheus installed server, then install prometheus-alertmanager using apt repository.
@@ -10,14 +10,14 @@ For this task I used this https://github.com/yurcn/prometheus-skype-alerts.git g
       - "alert-rules/rules.yml"
 
 5) backup default alertmanager.yml file like this alertmanager.yml.bak
-6) edit /etc/prometheus/alertmanager.yml, this file exists this git repo
+6) edit /etc/prometheus/alertmanager.yml, this file exists at yaml-files folder
 7) git clone https://github.com/yurcn/prometheus-skype-alerts.git
 8) create skype-config.yml file at cloned project root directory
 9) open your browser, login to skype with your credentials, create group chat, name it anything you want
   write any text to that group, skype opened window, mouse right click, press inspect, and move to network section, there you must
   find group channel id like this 19:XXXX@thread.skype
 10) open skype-config.yml and complete your credentail details with group channel id (this file also exists this git repo)
-11) and run this project python3 prometheus-skype-alerts --config=skyp-config.yml
+11) and run this project python3 prometheus-skype-alerts --config=skype-config.yml
 
 PS: grafana-server, prometheus, prometheus-alertmanager and python app must be running state in order to see results
 you should see like this message "FIRING, Endpoint 192.168.124.11:9100 down, 2024-07-08T15:22:36+00:00" at skype messenger
